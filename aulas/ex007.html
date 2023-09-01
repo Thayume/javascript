@@ -44,8 +44,43 @@
 
         div {
             position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%);
-
         }
+
+        img#esquerda {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+
+            left: 10%;
+            top: 45%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        img#direita {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+
+            left: 85%;
+            top: 38%;
+
+            
+
+            
+            moz-transform: scaleX(-1);
+            o-transform: scaleX(-1);
+            webkit-transform: scaleX(-1);
+            transform: scaleX(-1)
+}
+
+
+}
+
+        
+
+            
+        
 
         
     </style>
@@ -53,7 +88,11 @@
 <body>
      <h1>somando valores</h1>
 
-     <div id="inpt">
+     <img src="imagens/73076.png" alt="img math" id="esquerda">
+
+     <img src="imagens/73076.png" alt="img math" id="direita">
+
+     <div id="inpt" >
          <input type="number" name="txtn1" id="txtnu1"> +
 
          <input type="number" name="txtn2" id="txtnu2">
