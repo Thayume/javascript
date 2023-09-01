@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM aula 10</title>
+    <style>
+        div#area{
+            font: normal 15pt Arial;
+            background: rgb(0, 194, 0);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interaja...
+
+    </div>
+
+    <script> 
+
+    function clicar() {
+
+        //var a = window.document.getElementById('area')
+
+        a.innerText = 'Clicou!'
+        a.style.background = 'pink'
+    }
+
+    var a = window.document.getElementById('area')     
+ 
+    /*
+    poderíamos colocar desta forma ao invés de ter que fazer um em todas asfunctions (mas é melhor não usar por problemas de uso de memória) */
+
+    function entrar() {
+        //var a = window.document.getElementById ('area')
+
+        a.innerText = 'entrou'
+
+        a.style.background = 'blue'
+    }
+
+    function sair() {
+     //var a = window.document.getElementById ('area')
+
+        a.innerText = 'saiu'
+
+        a.style.background = 'rgb(0, 194, 0)'
+
+    }
+
+
+
+    </script>
+</body>
+</html>

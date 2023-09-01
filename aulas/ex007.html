@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
+
+    
+
+    <title>Somando números aula 10</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+        body {
+            background-color: rgb(140, 126, 153);
+            font: normal 18pt Arial;
+            
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+            
+            
+        }
+
+        div#res {
+           margin-top: 10px;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Black Ops One', cursive;
+        }
+
+        div#inpt{
+            position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);
+            
+        }
+
+        div {
+            position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%);
+
+        }
+
+        
+    </style>
+</head>
+<body>
+     <h1>somando valores</h1>
+
+     <div id="inpt">
+         <input type="number" name="txtn1" id="txtnu1"> +
+
+         <input type="number" name="txtn2" id="txtnu2">
+
+         <input type="button" value="Somar" onclick="somar()">
+     </div>
+
+     <div id="res"> 
+        resultado
+     </div>
+
+     <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtnu1')
+
+            // ou ao invés de getElementById podemos utilizar: ↘
+
+            var tn2 = window.document.querySelector('input#txtnu2')
+
+            var res = window.document.getElementById('res')
+
+            var n1 = Number(tn1.value)
+
+            var n2 = Number(tn2.value)
+
+            var s = n1 + n2 
+
+            res.innerHTML = `A soma entre ${n1}  e ${n2} é igual a <strong> ${s}</strong>`
+        }
+     </script>
+</body>
+</html>
