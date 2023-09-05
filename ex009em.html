@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+
+    <style>
+        body{
+            background: rgb(48, 47, 47);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nacionalidades</h1>
+
+    País é: <input type="text" name="paises" id="ipaís">
+
+    <input type="button" value="verificar"
+     onclick="verif()">
+
+    <div id="result"></div>
+
+    <script>
+
+        function verif(){
+            
+            var país = (ipaís.value)
+
+            var result = window.document.querySelector('div#result')
+        
+            result.innerHTML = `<p>Seu país é ${país}</p>`
+
+            if (país == 'Brasil'){
+            result.innerHTML +=` portanto você é: <strong>brasileiro</strong>`
+            } else { result.innerHTML +=`Seu país é ${país} portanto você é:<strong> Estrangeiro</strong>`}
+    }
+
+
+    </script>
+
+</body>
+</html>
