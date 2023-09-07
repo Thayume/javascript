@@ -72,7 +72,7 @@
     <div>
         
             <h1>Nacionalidades</h1>
-            País é: <input type="text" name="paises" id="ipaís">
+            Qual é o seu país? <input type="text" name="paises" id="ipaís">
             <input type="button" value="verificar"
              onclick="verif()">
             <div id="result">(Resultado aparece aqui) </div>
@@ -83,7 +83,7 @@
                     var result = window.document.querySelector('div#result')
         
                     result.innerHTML = `<p>Seu país é ${país}</p>`
-                    if (país == 'Brasil' ){
+                    if (país == 'Brasil' || 'brasil'){
                     result.innerHTML +=` portanto você é: <strong>brasileiro</strong>`
                     } else { result.innerHTML +=` portanto você é:<strong> Estrangeiro</strong>`}
             }
