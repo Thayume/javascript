@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body{
-    background:rgb(84, 84, 195) ;
+    background:rgb(143, 191, 188) ;
     font: normal 15pt Arial;
 
 }
@@ -19,6 +19,19 @@ section{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.646);
 
 }
+
+img {
+    
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: solid black;
+    
+  }
+
+  div#resultimg{
+    text-align: center;
+  }
 
 footer{
     color: white;
